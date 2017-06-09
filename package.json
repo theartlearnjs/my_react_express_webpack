@@ -1,0 +1,56 @@
+{
+  "name": "react_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/app.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theartlearnjs/my_react_express_webpack.git"
+  },
+  "author": "theart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theartlearnjs/react_study/issues"
+  },
+  "homepage": "https://github.com/theartlearnjs/react_study#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "node-less": "^1.0.0",
+    "postcss-loader": "^2.0.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "redux": "^3.6.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-import": "^1.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "ejs": "^2.5.6",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "path": "^0.12.7",
+    "webpack": "^2.6.1"
+  }
+}
