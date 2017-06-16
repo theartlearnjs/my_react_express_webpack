@@ -4,14 +4,11 @@ import path from 'path'
 import logger from 'morgan'
 import cookieParser from 'cookie-parser'
 import ejs from 'ejs'
-// import webpack from 'webpack'
-// import webpackDevMiddleware from 'webpack-dev-middleware'
-// import webpackHotMiddleware from 'webpack-hot-middleware'
-// import webpackDevConfig from '../webpack.config.js'
-var webpack = require('webpack')
-var webpackDevMiddleware = require('webpack-dev-middleware')
-var webpackHotMiddleware = require('webpack-hot-middleware')
-var webpackDevConfig = require('../webpack.config.js')
+import webpack from 'webpack'
+import webpackDevMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
+import webpackDevConfig from '../webpack.config.js'
+import opn from 'opn'
 
 let compiler = webpack(webpackDevConfig)
 const port = 4000
@@ -39,4 +36,5 @@ app.get('/', (req, res) => {
 })
 app.listen(port, () => {
     console.log('server is running on port 4000')
+    opn('http://localhost:' + port)
 })
